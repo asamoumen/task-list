@@ -1,0 +1,80 @@
+body {
+  
+}
+
+.todo-wrapper {
+  width: 500px;
+}
+
+h2 {
+  font-size: 14px;
+  font-family: megrim, fantasy;
+  background: #1CA89C;
+  padding: 40px;
+  margin: 0;
+  color: #333;
+  text-align: center;
+ }
+.emphasis {
+  font-family: vast-shadow, sans-serif;
+  font-size: 14px;
+}
+
+ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+li {
+  font-family: megrim, fantasy;
+  font-size: 12px;
+  padding: 5px;
+  background: #65d8cb; /* Old browsers */
+  list-style-type: none;
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+li input[type="checkbox"] {
+  width: 40px;
+}
+
+.done-true {
+  text-decoration: line-through;
+  color: #ddd;
+}
+
+.add-input {
+  width: 60%;
+  height: 20px;
+  float: left;
+  border: none;
+  padding: 40px 0;
+  font-size: 2em;
+  font-family: megrim, fantasy;
+  text-indent: 55px;
+}
+.add-btn {
+  width: 40%;
+  border: none;
+  background: #29F4E3;
+  padding: 0;
+  height: 100px;
+  h2 {
+   background: #29F4E3;
+   padding: 0;
+   font-size: 14px;
+   font-family: megrim, fantasy;
+   color: #333;
+  }
+}
+
+.clear-btn {
+  width: 100%;
+  border: none;
+  height: 100px;
+  background: #13756D;
+  font-size: 14px;
+  font-family: megrim, fantasy;
+  color: #aaa;
+}
