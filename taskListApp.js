@@ -1,5 +1,5 @@
 function TodoCtrl($scope) {
-  
+  /**/
   $scope.todos = [
     {text:'First task', done:false},         
     {text: 'Second', done:false}

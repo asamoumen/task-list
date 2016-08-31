@@ -8,20 +8,35 @@
   </head>
   <body>
     <div class="todo-wrapper" ng-controller="TodoCtrl">
-      <h2>Tasks <span class="emphasis">( {{getTotalTodos()}} )</span></h2>
       <ul>
         <li ng-repeat="todo in todos">
+          <span class="task-color-indicator"></span>
           <input type="checkbox" ng-model="todo.done"/>
-          <span class="done-{{todo.done}}">{{todo.text}}</span>
+          <p class="done-{{todo.done}}">{{todo.text}}</p>
+          <div class="clear"></div>
         </li>
       </ul>
       <form>
-        <input class="add-input" placeholder="I need to..." type="text" ng-model="formTodoText" ng-model-instant />
+        <textarea class="add-input" placeholder="I need to..." type="text" ng-model="formTodoText" ng-model-instant></textarea>
+        <div class="form-element">
+          <label>Importance : </label>
+          <select>
+              <option>Important</option>
+              <option>Not important</option>
+          </select>
+        </div>
+        <div class="form-element">
+          <label>Urgency : </label>
+          <select>
+              <option>Urgent</option>
+              <option>Not urgent</option>
+          </select>
+        </div>
         <button class="add-btn" ng-click="addTodo()"><h2>Add</h2></button>
       </form>
       
       <button class="clear-btn" ng-click="clearCompleted()">Clear completed</button>
     </div>
   </body>
-  
+  <!-- -->
 </html>
